@@ -1,0 +1,143 @@
+.container {
+    width: 100%;
+    padding-top: 70px;
+    box-sizing: border-box;
+   
+}
+
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    h3 {
+        font-size: var(--text-xl);
+        letter-spacing: 0.02rem;
+        font-weight: normal;
+    }
+}
+
+
+.inventory {
+    width: 100%;
+    height: fit-content;
+}
+
+.inventoryHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--primary-color);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-sizing: border-box;
+
+    h2 {
+        color: white;
+        font-weight: normal;
+        font-size: var(--text-xl);
+        color: 2.5rem;
+    }
+
+    .inputContainer {
+        flex: 1;
+        position: relative;
+        .inputBtnContainer{
+            position: absolute;
+            top:50%;
+            transform:translateY(-50%);
+            right: 0;
+            display: flex;
+            gap: 5px;
+        }
+        
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            outline: 1px solid transparent;
+            color: black;
+            font-size: var(--text-md);
+            border-radius: 5px;
+
+            &:active {
+                outline: 1px solid gray;
+            }
+        }
+
+        .category{
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            color: white;
+            align-items: center;
+            height: 80%;
+            box-sizing: border-box;
+            padding: 0 10px;
+            border-radius: 2px;
+            gap: 10px;
+            background: var(--primary-color);
+            svg{
+                fill: white ;
+            }
+        }
+
+        .categoryName{
+            display: block;
+
+        }
+
+        
+    }
+
+}
+
+.inventoryList {
+    height: 500px;
+    width: 100%;
+    background: lightgray;
+}
+
+.create-button {
+    background-color: green; // Using a placeholder color, adjust as needed
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: var(--text-md);
+    font-weight: normal;
+    text-transform: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 4px; // Adjust for the desired curvature
+
+    .dropdown-arrow {
+        margin-left: 8px;
+    }
+
+    &:hover {
+        background-color: lighten(green, 10%); // Darken on hover, adjust as needed
+    }
+
+    &:focus {
+        outline: none;
+        // Optional: Add focus styles, like a border or box-shadow
+    }
+
+    &:active {
+        background-color: darken(#FFD700, 20%); // Further darken on active/click
+    }
+}

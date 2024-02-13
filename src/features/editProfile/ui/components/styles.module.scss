@@ -1,0 +1,86 @@
+.header {
+    font-size: var(--text-xl);
+    font-weight: normal;
+}
+
+.contacts {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    padding: 5px 2px;
+
+    img {}
+
+    &-input {
+        flex: 1;
+        font-size: var(--text-md);
+        padding: 0;
+
+        input {
+            height: 35px;
+        }
+    }
+
+    .deleteBtn {
+        opacity: 0;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+
+        .deleteBtn {
+            opacity: 1;
+        }
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #959595;
+    }
+}
+
+.contacts__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__add {
+    justify-self: center;
+}
+
+
+
+@keyframes appearAnimation {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+.contactTypeSelector {
+    display: flex;
+    gap: 5px;
+    animation: appearAnimation 0.2s ease-in-out 0 1 both;
+    .contactTypeOption {
+        box-sizing: border-box;
+        padding: 2px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+}

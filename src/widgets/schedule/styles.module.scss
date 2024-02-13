@@ -1,0 +1,86 @@
+.schedule {
+    display: flex;
+    flex-direction: column;
+    // Add more styles as needed
+    background-color: white;
+}
+
+.scheduleHeader {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    width: 100%;
+    height: 50px;
+    background: var(--primary-color);
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    h4 {
+        color: white;
+        font-weight: normal;
+        font-size: var(--text-md);
+    }
+    .heading{
+        width: 190px;
+        text-align: start;
+    }
+    .spacer {
+        flex: 1
+    }
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    // Add more styles as needed
+}
+
+.dayName {
+    flex:1;
+    font-weight: bold;
+    // Add more styles as needed
+}
+
+.timeInput {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: auto; 
+    
+}
+
+.times {
+    width: 190px;
+}
+
+.openTime,
+.closeTime {
+    // Add more styles as needed
+}
+
+.statusIndicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .greenCircle,
+  .redCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .greenCircle {
+    background-color: green;
+  }
+  
+  .redCircle {
+    background-color: red;
+  }

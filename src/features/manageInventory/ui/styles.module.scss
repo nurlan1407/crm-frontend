@@ -1,0 +1,116 @@
+.outline {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 95%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+
+    .titleContainer {
+        display: flex;
+        flex: 0.4;
+        gap: 30px;
+        align-items: center;
+        // justify-content: space-between;
+
+        h3 {
+            display: block;
+            font-weight: normal;
+            font-size: var(--text-lg);
+        }
+
+        .tabContainer {
+            display: flex;
+            max-width: 500px;
+            width: 500px;
+            overflow: auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .tabInput {
+            width: 100px;
+
+            input {
+                height: 40px;
+
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .actionsContainer {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        overflow: hidden;
+
+        .addBtn {
+            display: flex;
+            padding: 0 10px;
+            background: var(--primary-color);
+            align-items: center;
+            border-radius: 5px;
+            gap: 10px;
+            color: white;
+
+            span {
+                display: block;
+            }
+
+            svg {
+                fill: #FFF
+            }
+        }
+
+    }
+}
+
+.inventory {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    box-sizing: border-box;
+    background: #EDEEF0;
+    user-select: none;
+    overflow: hidden;
+    .paginationContainer{
+        width: 5%;
+    }
+    .itemList {
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 10px 10px;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+}

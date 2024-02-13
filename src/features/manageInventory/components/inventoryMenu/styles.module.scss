@@ -1,0 +1,45 @@
+.contextMenu {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: fit-content;
+    background: #fff;
+    box-sizing: border-box;
+    z-index: 5000;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 0px;
+    &.active {
+        display: block;
+    }
+
+    .contextMenuItem {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        border-bottom: 1px solid #757575;
+        transition: all 0.2s ease-in;
+
+        z-index: 5000;
+        gap: 10px;
+        box-sizing: border-box;
+        span{
+            display: block;
+            flex: 1;
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    span {
+        display: block;
+    }
+}

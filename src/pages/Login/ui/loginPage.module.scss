@@ -1,0 +1,108 @@
+.page {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    padding-top: 50px;
+    user-select: none;
+}
+
+.form-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    // background: var(--primary-color
+
+    input {
+        margin-top: 15px;
+    }
+
+    input:nth-child(2) {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+.header-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.logo-container {
+    margin-bottom: 15px ;
+    .logo-container-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .header-logo {
+        font-family: 'Pacifico', cursive;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+.checkboxContainer {
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    input[type='checkbox'] {
+        height: 20px;
+        width: 20px;
+        border: 2px solid #c9c9c9;
+        background-color: #dedbdb;
+        cursor: pointer;
+        margin: 0;
+        vertical-align: middle;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            border-color: var(--primary-color);
+            box-shadow: 0 0  4px 1px var(--primary-color);
+        }
+        &:active{
+            border-color: var(--primary-color);
+        }
+
+    }
+
+    label {
+        cursor: pointer;
+    }
+}
+
+.forgotPasswordBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gray;
+
+    a {
+        color: gray
+    }
+}

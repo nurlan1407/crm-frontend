@@ -1,0 +1,31 @@
+.btn {
+    display: block;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #1976D2;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+    border: none; 
+    outline: none; 
+    text-align: center; 
+    line-height: 40px; 
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #165a9c; /* Darken the button color on hover */
+    transform: translateY(-2px); /* Slightly raise the button */
+}
+
+.btn:focus, .btn:active {
+    background-color: #0f4c81; /* Further darken the button on active/focus */
+    outline: none; /* Ensure outline doesn't appear on focus */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Slightly lower the button when pressed */
+}

@@ -1,0 +1,52 @@
+.container {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 300px;
+    height: 100px;
+    background: #F2E6E6;
+    border: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+
+    &.success {
+        border: 2px solid #408844;
+        background: #EDF7ED;
+
+        color: #408844;
+    }
+}
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 40px;
+
+    h2 {
+        font-weight: 500;
+        font-size: var(--text-lg);
+    }
+
+    svg {
+        fill: red
+    }
+    &.success{
+        svg{
+            fill: #408844;
+        }
+    }
+}
+
+.container__message {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    p {
+        font-size: var(--text-md);
+    }
+}

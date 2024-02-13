@@ -1,0 +1,92 @@
+.inventoryItem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    // width: 220px;
+    height: 280px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #FFF;
+    border-radius: 5px;
+    border:1px solid gray;
+    transition: all 0.2s ease-in;
+    &:hover{
+        transform: scale(1.1);
+    }
+    .btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        // background: rgba(0,0,0,0.7);
+        svg{
+            fill:black
+        }
+    }
+    img{
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+    .inventoryItemContent{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    h5{
+        align-self: flex-start;
+        text-align: start;
+        font-weight: normal;
+        font-size: var(--text-lg);
+        padding:0 20px;
+    }
+    .description{
+        display: -webkit-box;
+        min-height: 38px;
+        -webkit-line-clamp: 2; /* Number of lines you want to display */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding:0 20px;
+    }
+    .additional{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        font-size: var(--text-sm);
+        padding:0 20px 20px 20px;
+    }
+    
+}
+
+.contextMenu {
+    width: 150px;
+    background: #FFF;
+    box-sizing: border-box;
+    z-index: 500;
+    overflow: hidden;
+
+    .contextMenuItem {
+        width: 100%;
+        box-sizing: border-box;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        border-bottom: 1px solid #757575;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    span {
+        display: block;
+    }
+}

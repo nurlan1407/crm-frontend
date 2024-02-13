@@ -1,6 +1,87 @@
 @import './styles/variables.scss';
 
-.app{
+$font-size-small: 0.8rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.2rem;
+$font-size-xlarge: 1.5rem;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+p,
+a {
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1.2;
+}
+
+button {
+    border: none;
+}
+button, input, textarea, select {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
+  }
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    color: #2E2E2E;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+:root {
+    --text-sm: 0.8rem;
+    --text-md: 1rem;
+    --text-lg: 1.2rem;
+    --text-xl: 1.5rem;
+    --background: #121322;
+    --text-color: white;
+    --primary-color: #1976D2;
+}
+
+
+
+#root {
+    height: 100%;
+    position: relative;
+}
+main{
+}
+.app {
+    height: 100%;
     background: var(--background);
     color: var(--text-color);
+}
+
+.wrapper{
+    max-width: 1200px;
+    height: fit-content;
+    margin: 0 auto ;
 }

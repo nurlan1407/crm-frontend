@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.flex {
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.input {
+    margin-top: 4px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    transition: outline 0.2s ease-in-out; // Apply transition to border-color
+    border-radius: 5px;
+    outline: 1px solid rgb(166, 166, 166);
+    box-sizing: border-box;
+
+    &[type=number] {
+        -moz-appearance: textfield;
+
+    }
+
+    &:focus {
+        outline: 1px solid #1976D2;
+    }
+
+    &:hover {
+        border-color: #1976D2; // Change border color on hover
+    }
+}
+
+.label {
+    font-size: var(--text-md);
+    transition: all 0.3s ease-in;
+}
+
+.label--active {
+    color: #1976D2;
+}

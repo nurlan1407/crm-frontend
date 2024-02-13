@@ -3,22 +3,20 @@ import ReactDom from 'react-dom'
 import './index.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { LoginPage } from 'pages/Login'
-import { RegisterPage } from 'pages/Register'
+import Dashboard from 'pages/Dashboard/ui/Dashboard'
+import Inventory from 'pages/Inventory/ui'
+import { Provider } from 'react-redux';
+import { store } from 'store/store'
+import { useAlert } from 'hooks/useAlert'
+import App from 'app'
 
 const root = document.getElementById('root')
 ReactDom.render(
-
-    <BrowserRouter>
-    <div className='app'>
-        <Routes>
-            <Route path="register" element={<RegisterPage />}></Route>
-            <Route path="login" element={<LoginPage />}></Route>
-            {/* <Route path=""></Route>
-        <Route path="register"></Route> */}
-        </Routes>
-        </div>
-    </BrowserRouter>
-
+    <Provider store={store}>
+        <BrowserRouter>
+            <App></App>
+        </BrowserRouter>
+    </Provider>
     ,
     root
 )

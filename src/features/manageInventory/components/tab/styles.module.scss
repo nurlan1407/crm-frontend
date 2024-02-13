@@ -1,0 +1,30 @@
+.tab {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: var(--text-lg);
+    box-sizing: border-box;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1px;
+        height: 70%;
+        background: black;
+        transform: skewX(-20deg);
+
+        // transform-origin: top left;
+        z-index: 5;
+    }
+
+    &:hover {
+        border-bottom: 1px solid #959595;
+    }
+
+
+}
+
+.active {
+    border-bottom: 1px solid #959595;
+}
